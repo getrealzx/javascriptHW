@@ -159,51 +159,62 @@
 /////////////med hw 8 Leetspeak
 
 
-
-
-
 function leetspeak(p){
     
-    var List=p.split("");
+    var List=p.toUpperCase().split("");
     
 
     for(var i=0; i<p.length;i++){
-        if (List[i].toUpperCase() == "A"){
+        if (List[i] == "A"){
         List[i] = "4"}
 
-    if (List[i].toUpperCase() == "E"){
+    if (List[i] == "E"){
         List[i] = "3";}
 
 
-    if (List[i].toUpperCase() == "G"){
+    if (List[i] == "G"){
         List[i] = "6"}
 
-    if (List[i].toUpperCase() == "I"){
+    if (List[i] == "I"){
         List[i] = "1"}
 
-    if (List[i].toUpperCase() == "O"){
+    if (List[i] == "O"){
         List[i] = "0"}
 
-    if (List[i].toUpperCase() == "S"){
+    if (List[i] == "S"){
         List[i] = "5"}
 
-    if (List[i].toUpperCase() == "T"){
+    if (List[i] == "T"){
         List[i] = "7"}
-    
+
+    if (List[i] == "L"){
+        List[i] = "1"}
 
   
     }
-    var p=List.join();
+    var p=List.join("");
 
-    console.log(List);
+    console.log(p);
 
 }
 
-
-
 leetspeak("LeEaT");
 
-// var u="idontknow";
+/////////////Long-long Vowels
 
-// console.log(u[2].toUpperCase());
+// function longv(w){
+//     var List=w.split("");
+//     for(var i=0;i<w.length;i++){
+// //         if
 
+
+
+
+
+//     }
+
+
+
+// }
+
+// longv("good")

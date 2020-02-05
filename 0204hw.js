@@ -60,7 +60,6 @@
 //         break;
 
 //         default: tippercent=0;            
-
 //     }
 
 //     var total=bill*tippercent+bill;

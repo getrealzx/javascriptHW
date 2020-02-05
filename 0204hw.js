@@ -159,62 +159,85 @@
 /////////////med hw 8 Leetspeak
 
 
-function leetspeak(p){
+// function leetspeak(p){
     
-    var List=p.toUpperCase().split("");
+//     var List=p.toUpperCase().split("");
     
 
-    for(var i=0; i<p.length;i++){
-        if (List[i] == "A"){
-        List[i] = "4"}
+//     for(var i=0; i<p.length;i++){
+//         if (List[i] == "A"){
+//         List[i] = "4"}
 
-    if (List[i] == "E"){
-        List[i] = "3";}
+//     if (List[i] == "E"){
+//         List[i] = "3";}
 
 
-    if (List[i] == "G"){
-        List[i] = "6"}
+//     if (List[i] == "G"){
+//         List[i] = "6"}
 
-    if (List[i] == "I"){
-        List[i] = "1"}
+//     if (List[i] == "I"){
+//         List[i] = "1"}
 
-    if (List[i] == "O"){
-        List[i] = "0"}
+//     if (List[i] == "O"){
+//         List[i] = "0"}
 
-    if (List[i] == "S"){
-        List[i] = "5"}
+//     if (List[i] == "S"){
+//         List[i] = "5"}
 
-    if (List[i] == "T"){
-        List[i] = "7"}
+//     if (List[i] == "T"){
+//         List[i] = "7"}
 
-    if (List[i] == "L"){
-        List[i] = "1"}
+//     if (List[i] == "L"){
+//         List[i] = "1"}
 
   
-    }
-    var p=List.join("");
-
-    console.log(p);
-
-}
-
-leetspeak("LeEaT");
-
-/////////////Long-long Vowels
-
-// function longv(w){
-//     var List=w.split("");
-//     for(var i=0;i<w.length;i++){
-// //         if
-
-
-
-
-
 //     }
+//     var p=List.join("");
 
-
+//     console.log(p);
 
 // }
 
-// longv("good")
+// leetspeak("LeEaT");
+
+/////////////Long-long Vowels
+
+// function longv(w)
+// {
+//     var L=w.split("");
+
+//     for(var i=0;i<w.length;i++)
+//     {
+//          if (L[i]=="a"||L[i]=="e"||L[i]=="i"||L[i]=="o"||L[i]=="u")
+//          {
+//              if(L[i]==L[i-1])
+//              {
+//                  L[i]=L[i]+L[i]+L[i];
+//              }
+//          }
+//     }
+//     return w=L.join("");
+// }
+
+// console.log(longv("Cheese"));
+
+
+///////////// 10 Just the positives
+
+
+var L=[];
+
+function justPositive(L)
+{
+    var P=[];
+    for(var i=0;i<L.length;i++)
+    {
+        if(L[i]>0)
+        {  
+            P.push(L[i]);
+        }
+    }
+console.log(P);
+};
+
+justPositive([10,0,3,-3,1,8,-9]);

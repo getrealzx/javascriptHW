@@ -200,7 +200,7 @@
 
 // leetspeak("LeEaT");
 
-/////////////Long-long Vowels
+/////////////9. Long-long Vowels
 
 // function longv(w)
 // {
@@ -225,19 +225,143 @@
 ///////////// 10 Just the positives
 
 
-var L=[];
+// var L=[];
 
-function justPositive(L)
+// function justPositive(L)
+// {
+//     var P=[];
+//     for(var i=0;i<L.length;i++)
+//     {
+//         if(L[i]>0)
+//         {  
+//             P.push(L[i]);
+//         }
+//     }
+// console.log(P);
+// };
+
+// justPositive([10,0,3,-3,1,8,-9]);
+
+///////////// 11. Caesar Cipher
+
+// var offset=13;
+// var txt='Genius without education is like silver in the mine';
+
+
+// function cipher(txt)
+// {
+//     var alpha = "abcdefghijklmnopqrstuvwxyz";
+//     var newTxt="";
+//     var alpIndex=0;
+
+//     for(var i=0;i<txt.length;i++)
+
+//     {
+//         if(txt[i]!=txt[i].toLowerCase())
+//         {
+//             var isUpper=true;
+//             var char=txt[i].toLowerCase();
+//         }
+
+//         else{
+//             char=txt[i];
+//             isUpper=false;
+//         };
+
+//         if(alpha.includes(char))
+//         {
+//             if(alpha.indexOf(char)<offset)
+//             {
+//                 alpIndex=26-(offset-alpha.indexOf(char));
+//             }
+
+//             else
+//             {
+//             alpIndex=(alpha.indexOf(char)-offset)%26;
+//             };
+
+
+//             if(isUpper)
+//             {
+//                 newTxt=newTxt+(alpha[alpIndex].toUpperCase());
+//             }
+//             else
+//             {
+//                 newTxt=newTxt+alpha[alpIndex];
+//             }
+//         }
+//         else
+//         {
+//             newTxt=newTxt+txt[i];
+//         };
+//     }
+//     console.log(newTxt);
+//     return newTxt;
+
+
+// }
+
+// cipher(txt);
+
+
+
+//////////////// 12. Caesar Cipher 2-deciper
+
+
+var txt="Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar";
+
+
+function decipher(txt,offset)
 {
-    var P=[];
-    for(var i=0;i<L.length;i++)
-    {
-        if(L[i]>0)
-        {  
-            P.push(L[i]);
-        }
-    }
-console.log(P);
-};
+    var alpha = "abcdefghijklmnopqrstuvwxyz";
+    var newTxt="";
+    var alpIndex=0;
 
-justPositive([10,0,3,-3,1,8,-9]);
+    for(var i=0;i<txt.length;i++)
+
+    {
+        if(txt[i]!=txt[i].toLowerCase())
+        {
+            var isUpper=true;
+            var char=txt[i].toLowerCase();
+        }
+
+        else{
+            char=txt[i];
+            isUpper=false;
+        };
+
+        if(alpha.includes(char))
+        {
+            if(alpha.indexOf(char)<offset)
+            {
+                alpIndex=26-(offset-alpha.indexOf(char));
+            }
+
+            else
+            {
+            alpIndex=(alpha.indexOf(char)-offset)%26;
+            };
+
+
+            if(isUpper)
+            {
+                newTxt=newTxt+(alpha[alpIndex].toUpperCase());
+            }
+            else
+            {
+                newTxt=newTxt+alpha[alpIndex];
+            }
+        }
+        else
+        {
+            newTxt=newTxt+txt[i];
+        };
+    }
+    console.log(newTxt);
+    return newTxt;
+
+
+}
+
+decipher(txt,13);

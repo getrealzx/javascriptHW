@@ -78,43 +78,52 @@
 
 /////// 09 Sort an array 3////////
 
-var arr = [
-    [1, 3, 4],
-    [2, 4, 6, 8],
-    [3, 6] ];
+// var arr = [
+//     [1, 3, 4],
+//     [2, 4, 6, 8],
+//     [3, 6] ];
 
-// arr.forEach(function(SumL){
-//     var sum=0;
-//     SumL.map(function(num){
-//     sum=sum+num;
-//     // console.log(sum);
-// return sum;})
-// console.log(sum);
+// // arr.forEach(function(SumL){
+// //     var sum=0;
+// //     SumL.map(function(num){
+// //     sum=sum+num;
+// //     // console.log(sum);
+// // return sum;})
+// // console.log(sum);
+// // });
+
+// var sortedSum=arr.sort(function(a,b){
+//     let sum=0;
+//     if (a.map(function(num){
+//         sum=sum+num;
+//         return sum;
+//     })>b.map(function(num){
+//         sum=sum+num;
+//         return sum;
+//     })) return -1;
+
+//     else if(a.map(function(num){
+//         sum=sum+num;
+//         return sum;
+//     })<b.map(function(num){
+//         sum=sum+num;
+//         return sum;
+//     })) return 1;
+//     return 0;
+
 // });
 
-var sortedSum=arr.sort(function(a,b){
-    let sum=0;
-    if (a.map(function(num){
-        sum=sum+num;
-        return sum;
-    })>b.map(function(num){
-        sum=sum+num;
-        return sum;
-    })) return -1;
+// console.log(sortedSum);
 
-    else if(a.map(function(num){
-        sum=sum+num;
-        return sum;
-    })<b.map(function(num){
-        sum=sum+num;
-        return sum;
-    })) return 1;
-    return 0;
+/////// 10. 3 times////////
 
-});
 
-console.log(sortedSum);
+function fun(){console.log("Hello, world!")};
 
 
 
+function call3Times(fun) { fun(); fun(); fun(); }
+
+
+call3Times(fun);
 

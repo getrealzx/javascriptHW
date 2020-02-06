@@ -133,11 +133,13 @@ function hello(){console.log("Hello, world!")};
 function callNTimes(n, txt) { 
     for(var i=0;i<n;i++)
     {
-        hello();
+        txt();
     };
 }
 
 callNTimes(5,hello);
+
+
 
 
 

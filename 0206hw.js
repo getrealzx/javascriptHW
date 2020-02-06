@@ -118,12 +118,27 @@
 /////// 10. 3 times////////
 
 
-function fun(){console.log("Hello, world!")};
+// function fun(){console.log("Hello, world!")};
+
+// function call3Times(fun) { fun(); fun(); fun(); }
+
+// call3Times(fun);
 
 
 
-function call3Times(fun) { fun(); fun(); fun(); }
+/////// 11. n times////////
+
+function hello(){console.log("Hello, world!")};
+
+function callNTimes(n, txt) { 
+    for(var i=0;i<n;i++)
+    {
+        hello();
+    };
+}
+
+callNTimes(5,hello);
 
 
-call3Times(fun);
+
 

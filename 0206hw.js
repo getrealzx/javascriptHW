@@ -128,19 +128,28 @@
 
 /////// 11. n times////////
 
-function hello(){console.log("Hello, world!")};
+// function hello(){console.log("Hello, world!")};
 
-function callNTimes(n, txt) { 
-    for(var i=0;i<n;i++)
-    {
-        txt();
-    };
-}
+// function callNTimes(n, txt) { 
+//     for(var i=0;i<n;i++)
+//     {
+//         txt();
+//     };
+// }
 
-callNTimes(5,hello);
+// callNTimes(5,hello);
 
+/////// 12. Summy an array////////
 
+// var arr = [1, 3, 4]
 
+// var sum=0;
+// arr.map(function(num){
+    
+//     sum=sum+num;
+//     // console.log(sum);
+// return sum;})
+// console.log(sum);
 
 
 

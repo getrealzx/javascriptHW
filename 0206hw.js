@@ -151,5 +151,22 @@
 // return sum;})
 // console.log(sum);
 
+/////// 13. Acronym////////
 
+// > acronym(['very', 'important', 'person'])
+// 'VIP' 
+// > acronym(['national', 'aeronautics', 'space', 'administration']) 'NASA'
+
+
+var wordList=['very', 'important', 'person'];
+function acronymize(wL){
+    var acronym="";
+    var initi=wL.map(function(word){
+        acronym=acronym+word[0].toUpperCase();
+        return acronym;
+    })
+    console.log(acronym);
+}
+
+acronymize(wordList);
 
